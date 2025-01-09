@@ -27,20 +27,23 @@
                     <input type="text">
                 </div>
             </fieldset>
-            <input type="submit" value="送信" onclick="send()" onclick="send2()">
+            <input type="submit" value="送信" onclick="ques()">
 
             <script>
+                function ques(){
+                    if(windou.confirm("申し込みますか")){
+                        ;
+                    }else{
+                        send();
+                    }
+                }
+
                 function send(){
-                    alert("できませんでしたオーライ")
+                    alert("できませんでした")
                 }
-            </script>
 
-            <script>
-                function send2(){
-                    alert("責任取ってよ")
-                }
             </script>
-                </form>
+        </form>
 
         <button onclick="location.href='./index.html'"><もどる</button>
 
