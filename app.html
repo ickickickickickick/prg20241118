@@ -33,6 +33,9 @@
                 function ques(){
                     if(window.confirm("申し込みますか")){
                         alert("完了しました")
+                        setTimeout(() =>{
+                            location.href = "./index.html";
+                        }, 3000);
                     }else{
                         send();
                     }
